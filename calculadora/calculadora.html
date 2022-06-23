@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="diseno.css" rel="stylesheet" type="text/css">
+<title>Calculadora</title>
+</head>
+<body>
+</body>
+<h1 id = '01'>Calculadora</h1>
+    <table class = "calculadora" style = "align-items:center;" border = "1">
+    
+    <tbody>
+        <tr>
+            <td colspan="2" ><input type="text" class = "exp" id="expresion" name="name" value="" required minlength="4" maxlength="8" size="10"></td>
+        </tr>
+        
+        <tr> 
+            
+            <td><input id="7" class = "boton" type="button" value="7" onclick="escribir(this.id);" /> 
+            <input id="8"  class = "boton" type="button" value="8" onclick="escribir(this.id);" /> 
+            <input id="9"  class = "boton" type="button" value="9" onclick="escribir(this.id);"/>
+            <input id="suma" class = "boton" type="button" value="+" onclick="escribir(this.id);" /> </td>
+        </tr>
+        <tr>
+            <td><input id="4"  class = "boton" type="button" value="4" onclick="escribir(this.id);" /> 
+                <input id="5"  class = "boton" type="button" value="5" onclick="escribir(this.id);" /> 
+                <input id="6"  class = "boton" type="button" value="6" onclick="escribir(this.id);"/>
+            <input id="resta"  class = "boton" type="button" value="- " onclick="escribir(this.id);" /> </td>
+        </tr>
+        <tr>
+            <td><input id="1"  class = "boton" type="button" value="1" onclick="escribir(this.id);" /> 
+                <input id="2"  class = "boton" type="button" value="2" onclick="escribir(this.id);" /> 
+                <input id="3"  class = "boton" type="button" value="3" onclick="escribir(this.id);"/>
+            <input id="multiplicacion" class = "boton" type="button" value="* " onclick="escribir(this.id);" /> </td>
+        </tr>
+        <tr>
+            <td><input id="0" class = "boton" type="button" value="0" onclick="escribir(this.id);" />
+            <input id="division" class = "boton" type="button" value="/" onclick="escribir(this.id);" /> 
+            <input id="clear"  class = "boton" type="button" value="C" onclick="limpiar();" />
+            <input id="igual" class = "boton" type="button" value="=" onclick="operacion(this.id);" />  
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script src="calculadora.js"></script>
+</html>
